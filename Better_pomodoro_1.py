@@ -1,36 +1,12 @@
 #Juan Salazar 25/05/2024
 #Last update 29/06/2024
-#---------------------------DESCRIPCION DEL PROYECTO------------------------------------
-#                       Proyecto UI para metodo pomodoro 
-#Incluira con:
-#   Notificaciones al sistema (Listo)
-#   Una UI con customTkinter que espero de una estetica mejor donde:
-#       Seleccion de musica (listo)
-#       Opcion de quitar o conservar timer o barra de progresos (listo)
-
-#---------------------------IDEA Para hacerlo una app de escritorio---------------------
-#Incluir un xml donde se puedan modoificar las variables de musica y tiempos de timer
-#O hacer esto desde la propia app y colocar un archivo binario 
-
-#Mejora en el boton Quit traba la app por que no maneja bien el thread 
-
-#---------------------------Materiales creativos de interfaz----------------------------
-#rojo= #FF0000
-#amarillo #FFFF00
-#aqua #00FFFF azul cielo #87CEEB
-#azul 0068B6 chido
-
-#colores 
-#border #FFCC70
-#musica #8D6F3A
-#settings #AA7740
 #---------------------------Libreias DEL PROYECTO------------------------------------
 from customtkinter import *
 import time
 import threading
 import pywhatkit
 from plyer import notification
-#Define el tiempo de concentracion y de descanso en minutos
+#Define el tiempo de concentracion y de descanso en minutos, time in minutos for rest (r_timer) and concentration time (c_timer)
 c_timer=25
 r_timer=5
 #Arreglo de musica 
